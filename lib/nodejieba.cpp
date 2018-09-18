@@ -2,6 +2,7 @@
 
 #include "cppjieba/Jieba.hpp"
 #include "cppjieba/KeywordExtractor.hpp"
+#include "cppjieba/TextRankExtractor.hpp"
 
 cppjieba::Jieba* global_jieba_handle;
 cppjieba::KeywordExtractor* global_extractor_handle;
@@ -34,7 +35,6 @@ NAN_METHOD(load) {
   global_textRankExtractor_handle = new cppjieba::TextRankExtractor(
           global_jieba_handle->GetDictTrie(),
           global_jieba_handle->GetHMMModel(),
-          *idfPath,
           *stopWordsPath);
 
   info.GetReturnValue().Set(Nan::New<v8::Boolean>(true));

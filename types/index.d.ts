@@ -1,4 +1,4 @@
-declare module "nodejieba" {
+declare module "nodejieba-ex" {
   export function load(dict: object): void;
   export function cut(sentence: string, strict?: boolean): any;
   export function cutHMM(sentence: string): any;

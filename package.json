@@ -1,10 +1,11 @@
 {
   "name": "nodejieba-ex",
   "description": "chinese word segmentation for node",
-  "version": "2.2.7",
+  "version": "2.2.9",
   "author": "Yanyi Wu <i@yanyiwu.com>",
   "maintainers": [
-    "Yanyi Wu <i@yanyiwu.com>"
+    "Yanyi Wu <i@yanyiwu.com>",
+    "Chris Pei <spoppig5@gmail.com>"
   ],
   "main": "./index.js",
   "typings": "types/index.d.ts",
@@ -14,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/yanyiwu/nodejieba.git"
+    "url": "https://github.com/ChrisPei/nodejieba.git"
   },
   "keywords": [
     "chinese",
